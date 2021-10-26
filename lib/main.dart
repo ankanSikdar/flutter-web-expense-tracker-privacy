@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Expense Tracker Privacy Policy',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.white,
       ),
       home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
@@ -26,7 +27,37 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Expense Tracker Privacy Policy'),
+        backgroundColor: Colors.white,
+        elevation: 4.0,
+        toolbarHeight: 100.0,
+        title: Row(
+          children: [
+            Container(
+              height: 80.0,
+              width: 80.0,
+              padding: const EdgeInsets.all(10.0),
+              color: Colors.white,
+              child: Image.asset(
+                'assets/images/app_icon.png',
+                fit: BoxFit.contain,
+              ),
+            ),
+            const SizedBox(height: 18.0),
+            Expanded(
+              child: Text(
+                'Expense Tracker Privacy Policy',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  color: Theme.of(context).primaryColor,
+                ),
+                overflow: TextOverflow.visible,
+                maxLines: 2,
+                softWrap: true,
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
