@@ -67,6 +67,7 @@ class MyHomePage extends StatelessWidget {
           children: const [
             PrivacyComponent(),
             InfoCollected(),
+            LogData(),
           ],
         ),
       ),
