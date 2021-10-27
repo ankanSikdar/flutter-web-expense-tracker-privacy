@@ -66,6 +66,7 @@ class MyHomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
             PrivacyComponent(),
+            InfoCollected(),
           ],
         ),
       ),
