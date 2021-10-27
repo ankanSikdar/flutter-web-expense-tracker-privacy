@@ -69,6 +69,7 @@ class MyHomePage extends StatelessWidget {
             InfoCollected(),
             LogData(),
             Cookies(),
+            ServiceProvider(),
           ],
         ),
       ),
