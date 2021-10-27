@@ -73,6 +73,7 @@ class MyHomePage extends StatelessWidget {
             Security(),
             Links(),
             ChildrensPrivacy(),
+            PrivacyChanges(),
           ],
         ),
       ),
