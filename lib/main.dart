@@ -71,6 +71,7 @@ class MyHomePage extends StatelessWidget {
             Cookies(),
             ServiceProvider(),
             Security(),
+            Links(),
           ],
         ),
       ),
