@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "privacy-policy-apps"
+  },
+  "targets": {
+    "privacy-policy-apps": {
+      "hosting": {
+        "expensetracker": [
+          "expense-tracker-privacy"
+        ]
+      }
+    }
+  }
+}
