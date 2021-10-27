@@ -1,3 +1,4 @@
+import 'package:expense_tracker_privacy/components/components.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -56,6 +57,15 @@ class MyHomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
+          ],
+        ),
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.only(bottom: 50.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+            PrivacyComponent(),
           ],
         ),
       ),
